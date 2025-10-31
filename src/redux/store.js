@@ -1,11 +1,10 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import bookReducer from './bookSlice';
 
-const rootReducer = combineReducers({
-  booksData: bookReducer
-});
-
-const store = createStore(rootReducer, applyMiddleware(thunk));
+const store = createStore(
+  bookReducer,
+  applyMiddleware(thunk)
+);
 
 export default store;
