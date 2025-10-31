@@ -3,16 +3,16 @@ const initialState = {
   books: [],
   loading: false,
   error: null,
-  sortBy: 'title', // 'title' | 'author' | 'publisher'
-  sortOrder: 'asc' // 'asc' | 'desc'
+  sortBy: 'title', // options: 'title', 'author', 'publisher'
+  sortOrder: 'asc' // options: 'asc', 'desc'
 };
 
 // Action Types
-const FETCH_BOOKS_REQUEST = 'books/fetchRequest';
-const FETCH_BOOKS_SUCCESS = 'books/fetchSuccess';
-const FETCH_BOOKS_FAILURE = 'books/fetchFailure';
-const SET_SORT_BY = 'books/setSortBy';
-const SET_SORT_ORDER = 'books/setSortOrder';
+export const FETCH_BOOKS_REQUEST = 'books/fetchRequest';
+export const FETCH_BOOKS_SUCCESS = 'books/fetchSuccess';
+export const FETCH_BOOKS_FAILURE = 'books/fetchFailure';
+export const SET_SORT_BY = 'books/setSortBy';
+export const SET_SORT_ORDER = 'books/setSortOrder';
 
 // Action Creators
 export const fetchBooksRequest = () => ({ type: FETCH_BOOKS_REQUEST });
