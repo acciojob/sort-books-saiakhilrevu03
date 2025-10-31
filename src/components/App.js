@@ -1,13 +1,6 @@
+import React from 'react';
+import BooksList from './components/BooksList';
 
-import React from "react";
-import './../styles/App.css';
-
-const App = () => {
-  return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
-  )
+export default function App() {
+  return <BooksList />;
 }
-
-export default App
